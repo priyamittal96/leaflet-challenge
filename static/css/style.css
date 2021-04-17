@@ -6,12 +6,12 @@ body {
 
 html,
 body,
-#map {
-  height: 180px;}
-  /* width: 100%;
+#mapid {
+  height: 100%;
+  width: 100%;
   padding: 0;
   margin: 0;
-} */
+}
 
 .legend{
   padding:10px;
