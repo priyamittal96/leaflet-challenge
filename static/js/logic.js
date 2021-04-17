@@ -34,4 +34,19 @@ let baseMap = {
     "Light": light
 }
 
-// L.control.layers(baseMap, overlays)
+let allEarthquakes = new L.LayerGroup()
+let largeEarthquakes = new L.LayerGroup()
+let tectonicplates = new L.LayerGroup()
+
+let overlays = {
+    "Tectonic Plates": tectonicplates,
+    "Earthquakes": allEarthquakes
+}
+
+L.control.layers(baseMap. overlays).addTo(map)
+
+//Retrieve the geoJSON data
+d3.json("https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/all_week.geojson").then(function(data){
+
+
+})
