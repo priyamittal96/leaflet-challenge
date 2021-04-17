@@ -2,7 +2,7 @@ console.log("working");
 
 
 // title layer as the background of the map
-let streets = L.tileLayer('https"//api.mapbox.com/styles/v1/mapbox/streets-v11/{z}/{x}/{y}?access_token={accessToken}',{
+let streets = L.tileLayer('https://api.mapbox.com/styles/v1/mapbox/streets-v11/tiles/{z}/{x}/{y}?access_token={accessToken}',{
     attribution: 'Map data',
     maxZoom: 18,
     accessToken: API_KEY
@@ -15,5 +15,7 @@ let map = L.map('mapid',{
 })
 
 let baseMap = {
-    
+    "Streets": streets,
 }
+
+// L.control.layers(baseMap, overlays)
